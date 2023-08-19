@@ -1,5 +1,0 @@
-data: turingmirror/data/data.jsonl
-model:
-  name: claude-2
-  kwargs:
-    temperature: 0.7
