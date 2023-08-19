@@ -3,7 +3,7 @@ fable_ids: [] # <-- empty list means all fables in data file
 model:
   name: ???
   kwargs:
-    temperature: 0.75
+    temperature: 0.
 generator1: ??? # <-- the model (or "human") to distinguish from generator2
 generator2: ??? # <-- the model (or "human") to distinguish from generator1
 

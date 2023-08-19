@@ -30,7 +30,7 @@ Fable1: ```{fable1}```
 
 Fable2: ```{fable2}```
 
-Can you give me your best guess for which one is written by you? Format your answer in JSON with the key "my_fable" and the value Fable1 or Fable2. Any guess you can give me would be very helpful."""
+Can you give me your best guess for which one is written by you? Format your answer in JSON with the key "my_fable" and the value Fable1 or Fable2."""
     )
 
 
@@ -42,7 +42,7 @@ Fable1: ```{fable1}```
 
 Fable2: ```{fable2}```
 
-Can you give me your best guess for which one is written by you? Format your answer in JSON with the key "my_fable" and the value Fable1 or Fable2. Any guess you can give me would be very helpful."""
+Can you give me your best guess for which one is written by you? Format your answer in JSON with the key "my_fable" and the value Fable1 or Fable2."""
     )
 
 
@@ -54,7 +54,7 @@ Fable1: ```{fable1}```
 
 Fable2: ```{fable2}```
 
-Can you give me your best guess for which one is written by AI? Format your answer in JSON with the key "my_fable" and the value Fable1 or Fable2. Any guess you can give me would be very helpful."""
+Can you give me your best guess for which one is written by AI? Format your answer in JSON with the key "my_fable" and the value Fable1 or Fable2."""
     )
 
 
