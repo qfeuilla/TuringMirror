@@ -1,0 +1,23 @@
+data: turingmirror/data/data.jsonl
+model:
+  name: ???
+  kwargs:
+    temperature: 0.75
+
+
+hydra:
+  job:
+    chdir: true  # <-- if true Hydra creates a unique time-stamped output dir per run
+  run:
+    dir: data/fables/${hydra.job.override_dirname}  # <-- naming scheme for unique output dir
+  sweep:
+    dir: data/fables
+    subdir: ${hydra.job.override_dirname}
+
+  callbacks:
+    git_logging:
+      _target_: turingmirror.utils.log.LogGitHashCallback
+
+defaults:
+  - _self_
+#  - override hydra/launcher: joblib  # joblib launches runs in parallel; comment out if undesired
