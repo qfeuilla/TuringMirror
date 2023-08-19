@@ -69,17 +69,17 @@ def main(cfg: DictConfig):
                     extraction_model=extraction_model,
                     model=model
             ):
-                output.append({
-                    "moral": moral,
-                    "fable": extracted_fable,
+                d_out = {
                     "id": id,
-                })
+                    "fable": extracted_fable,
+                    "moral": moral,
+                }
+                output.append(d_out)
+                with open("fables.jsonl", "a") as f:
+                    f.write(json.dumps(d_out))
+                    f.write("\n")
 
         c.set_result(output)
-        with open("fables.jsonl", "w") as f:
-            for d in output:
-                f.write(json.dumps(d))
-                f.write("\n")
 
 
 @log_exceptions(LOGGER)
