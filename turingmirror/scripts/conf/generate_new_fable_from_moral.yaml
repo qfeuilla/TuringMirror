@@ -1,4 +1,4 @@
-data: turingmirror/data/data.jsonl
+data: data/fables/model.name=human/fables.jsonl
 model:
   name: ???
   kwargs:
