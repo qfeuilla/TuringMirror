@@ -1,0 +1,154 @@
+[2023-08-19 13:35:45,231][turingmirror.utils.log][INFO] - Git sha: 544f1ad1e01096293b9bef213617cddb8cb31ded
+[2023-08-19 13:35:45,233][turingmirror.utils.log][INFO] - Changed files: ['turingmirror/scripts/generate_new_fable_from_moral.py']
+[2023-08-19 13:35:45,235][turingmirror.utils.log][INFO] - Git diff:
+diff --git a/turingmirror/scripts/generate_new_fable_from_moral.py b/turingmirror/scripts/generate_new_fable_from_moral.py
+index 3d989e3..d181974 100644
+--- a/turingmirror/scripts/generate_new_fable_from_moral.py
++++ b/turingmirror/scripts/generate_new_fable_from_moral.py
+@@ -2,6 +2,7 @@
+ import json
+ import logging
+ from pathlib import Path
++from typing import Optional
+ 
+ import hydra
+ from hydra.utils import to_absolute_path
+@@ -62,22 +63,17 @@ def main(cfg: DictConfig):
+         for d in enumerate(data):
+             id = d["id"]
+             moral = d["moral"]
+-            # fable = d["fable"]
+-            generation_prompt = fable_prompt(moral)
+-            raw_fable = query_model(model=model, prompt=generation_prompt)
+-
+-            extraction_prompt = fable_extraction(raw_fable)
+-            extracted_fable_json = query_model(
+-                model=extraction_model,
+-                prompt=extraction_prompt,
+-            )
+-            extracted_fable = find_and_parse_json_block(extracted_fable_json)["fable"]
+-
+-            output.append({
+-                "moral": moral,
+-                "fable": extracted_fable,
+-                "id": id,
+-            })
++            if extracted_fable := generate_new_fable(
++                    id=id,
++                    moral=moral,
++                    extraction_model=extraction_model,
++                    model=model
++            ):
++                output.append({
++                    "moral": moral,
++                    "fable": extracted_fable,
++                    "id": id,
++                })
+             break
+         c.set_result(output)
+         with open("fables.jsonl", "w") as f:
+@@ -86,5 +82,20 @@ def main(cfg: DictConfig):
+                 f.write("\n")
+ 
+ 
++@log_exceptions(LOGGER)
++def generate_new_fable(id: int, moral: str, extraction_model, model) -> Optional[str]:
++    try:
++        generation_prompt = fable_prompt(moral)
++        raw_fable = query_model(model=model, prompt=generation_prompt)
++        extraction_prompt = fable_extraction(raw_fable)
++        extracted_fable_json = query_model(
++            model=extraction_model,
++            prompt=extraction_prompt,
++        )
++        return find_and_parse_json_block(extracted_fable_json)["fable"]
++    except Exception as e:
++        LOGGER.exception(f"id: {id}, exception: {e}")
++
++
+ if __name__ == '__main__':
+     main()
+[2023-08-19 13:35:45,235][__main__][INFO] - /home/jason/dev/acs/TuringMirror/data/fables/model.name=claude-2
+[2023-08-19 13:35:45,317][__main__][ERROR] - tuple indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/utils/log.py", line 23, in decorated
+    return func(*args, **kwargs)
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/generate_new_fable_from_moral.py", line 64, in main
+    id = d["id"]
+TypeError: tuple indices must be integers or slices, not str
+[2023-08-19 13:36:26,302][turingmirror.utils.log][INFO] - Git sha: 544f1ad1e01096293b9bef213617cddb8cb31ded
+[2023-08-19 13:36:26,304][turingmirror.utils.log][INFO] - Changed files: ['turingmirror/scripts/generate_new_fable_from_moral.py']
+[2023-08-19 13:36:26,306][turingmirror.utils.log][INFO] - Git diff:
+diff --git a/turingmirror/scripts/generate_new_fable_from_moral.py b/turingmirror/scripts/generate_new_fable_from_moral.py
+index 3d989e3..be54a3b 100644
+--- a/turingmirror/scripts/generate_new_fable_from_moral.py
++++ b/turingmirror/scripts/generate_new_fable_from_moral.py
+@@ -2,6 +2,7 @@
+ import json
+ import logging
+ from pathlib import Path
++from typing import Optional
+ 
+ import hydra
+ from hydra.utils import to_absolute_path
+@@ -59,25 +60,20 @@ def main(cfg: DictConfig):
+             inputs=cfg_dict,
+     ) as c:
+         output = []
+-        for d in enumerate(data):
++        for d in data:
+             id = d["id"]
+             moral = d["moral"]
+-            # fable = d["fable"]
+-            generation_prompt = fable_prompt(moral)
+-            raw_fable = query_model(model=model, prompt=generation_prompt)
+-
+-            extraction_prompt = fable_extraction(raw_fable)
+-            extracted_fable_json = query_model(
+-                model=extraction_model,
+-                prompt=extraction_prompt,
+-            )
+-            extracted_fable = find_and_parse_json_block(extracted_fable_json)["fable"]
+-
+-            output.append({
+-                "moral": moral,
+-                "fable": extracted_fable,
+-                "id": id,
+-            })
++            if extracted_fable := generate_new_fable(
++                    id=id,
++                    moral=moral,
++                    extraction_model=extraction_model,
++                    model=model
++            ):
++                output.append({
++                    "moral": moral,
++                    "fable": extracted_fable,
++                    "id": id,
++                })
+             break
+         c.set_result(output)
+         with open("fables.jsonl", "w") as f:
+@@ -86,5 +82,20 @@ def main(cfg: DictConfig):
+                 f.write("\n")
+ 
+ 
++@log_exceptions(LOGGER)
++def generate_new_fable(id: int, moral: str, extraction_model, model) -> Optional[str]:
++    try:
++        generation_prompt = fable_prompt(moral)
++        raw_fable = query_model(model=model, prompt=generation_prompt)
++        extraction_prompt = fable_extraction(raw_fable)
++        extracted_fable_json = query_model(
++            model=extraction_model,
++            prompt=extraction_prompt,
++        )
++        return find_and_parse_json_block(extracted_fable_json)["fable"]
++    except Exception as e:
++        LOGGER.exception(f"id: {id}, exception: {e}")
++
++
+ if __name__ == '__main__':
+     main()
+[2023-08-19 13:36:26,306][__main__][INFO] - /home/jason/dev/acs/TuringMirror/data/fables/model.name=claude-2
+[2023-08-19 13:36:32,898][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
