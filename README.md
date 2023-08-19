@@ -1,6 +1,17 @@
 # TuringMirror
 A benchmark to test whether AI are able to recognize their own output from human or other AI
 
+## Install
+
+**Poetry (recommended).** This repository utilizes [poetry](https://python-poetry.org/) for package management. Poetry automatically generates and manages a virtual environment for you, and also installs the `turingmirror` module itself. If you have poetry installed, running the following command will install everything you need:
+
+```commandline
+poetry install
+```
+
+**pip and `requirements.txt`.** Alternatively, `pip` can be used to install dependencies with `pip install -r requirements.txt`.
+
+Please note, when using `pip`, you're responsible for managing any virtual environments and deciding where packages should be installed.
 
 ## Dataset
 We use the [understanding_fables](https://github.com/google/BIG-bench/blob/main/bigbench/benchmark_tasks/understanding_fables/task.json) dataset from BIG-bench. 
