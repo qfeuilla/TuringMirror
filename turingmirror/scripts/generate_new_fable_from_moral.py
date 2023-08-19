@@ -36,12 +36,19 @@ def main(cfg: DictConfig):
     storage = FileStorage(Path.cwd())  # for storing contexts (structured logs)
     LOGGER.info(storage.directory)
 
+    ids = cfg.ids or []
+    if not isinstance(ids, list):
+        ids = [ids]
+
     # load json lines data
     data_path = to_absolute_path(cfg.data)
     data = []
     with open(data_path, "r") as f:
         for line in f:
-            data.append(json.loads(line))
+            d = json.loads(line)
+            if ids and d["id"] not in ids:
+                continue
+            data.append(d)
 
     model = get_engine(
         model=cfg.model.name,

@@ -1,4 +1,5 @@
 data: data/fables/model.name=human/fables.jsonl
+ids: [] # <-- empty list means all fables in data file
 model:
   name: ???
   kwargs:
