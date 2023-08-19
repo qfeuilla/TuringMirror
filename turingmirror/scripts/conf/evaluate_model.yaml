@@ -1,0 +1,25 @@
+data: data/fables/shuffled.json
+fable_ids: [] # <-- empty list means all fables in data file
+model:
+  name: ???
+  kwargs:
+    temperature: 0.75
+generator1: ??? # <-- the model (or "human") to distinguish from generator2
+generator2: ??? # <-- the model (or "human") to distinguish from generator1
+
+hydra:
+  job:
+    chdir: true  # <-- if true Hydra creates a unique time-stamped output dir per run
+  run:
+    dir: results/${hydra.job.override_dirname}  # <-- naming scheme for unique output dir
+  sweep:
+    dir: results
+    subdir: ${hydra.job.override_dirname}
+
+  callbacks:
+    git_logging:
+      _target_: turingmirror.utils.log.LogGitHashCallback
+
+defaults:
+  - _self_
+  - override hydra/launcher: joblib  # joblib launches runs in parallel; comment out if undesired

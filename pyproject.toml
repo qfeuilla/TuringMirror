@@ -14,6 +14,7 @@ omegaconf = "^2.3.0"
 gitpython = "^3.1.32"
 tqdm = "^4.66.1"
 hydra-joblib-launcher = "^1.2.0"
+pandas = "^2.0.3"
 
 
 [build-system]
