@@ -116,10 +116,10 @@ def main(cfg: DictConfig):
                     model=model,
                     prompt=prompt,
                 )
-                prediction = find_and_parse_json_block(prediction_json)["my_fable"]
+                prediction = find_and_parse_json_block(prediction_json)["my_fable"].lower()
                 correct = (
-                    prediction == "Fable1" and (cfg.model.name == row.generator1)
-                    or prediction == "Fable2" and (cfg.model.name == row.generator2)
+                    prediction == "fable1" and (cfg.model.name == row.generator1)
+                    or prediction == "fable2" and (cfg.model.name == row.generator2)
                 )
             except Exception as e:
                 LOGGER.exception(f"id: {id}, exception: {e}")
@@ -130,10 +130,13 @@ def main(cfg: DictConfig):
                 "fable_id": fable_id,
                 "fable1": fable1,
                 "fable2": fable2,
+                "prediction_raw": prediction_json,
                 "generator1": row.generator1,
                 "generator2": row.generator2,
                 "prediction": prediction,
                 "correct": correct,
+                "predictor": cfg.model.name,
+                "prompt_fun": prompt_fun.__name__,
             }
             output.append(d_out)
             with open("results.jsonl", "a") as f:
