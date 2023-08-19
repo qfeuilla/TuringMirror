@@ -16,6 +16,7 @@ tqdm = "^4.66.1"
 hydra-joblib-launcher = "^1.2.0"
 pandas = "^2.0.3"
 tenacity = "^8.2.3"
+jupyterlab = "^4.0.5"
 
 
 [build-system]

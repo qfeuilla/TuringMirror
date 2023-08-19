@@ -1,0 +1,587 @@
+[2023-08-19 18:56:46,007][turingmirror.utils.log][INFO] - Git sha: 3d4dde3f73b300b3f98202ea2a89898cd89989a2
+[2023-08-19 18:56:46,010][__main__][INFO] - /home/jason/dev/acs/TuringMirror/results/generator1=gpt-3.5-turbo,generator2=claude-2,model.name=claude-2
+[2023-08-19 18:56:48,677][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:56:50,622][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:56:56,967][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:56:56,967][__main__][ERROR] - id: 1893, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 18:56:59,777][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:02,051][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:04,200][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:06,086][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:13,770][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:13,771][__main__][ERROR] - id: 1898, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 18:57:15,866][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:17,777][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:19,807][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:25,500][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:36,506][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:38,767][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:40,881][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:42,951][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:45,101][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:46,911][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:48,888][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:50,805][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:53,116][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:55,033][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:57,286][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:57:59,077][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:06,542][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:06,543][__main__][ERROR] - id: 1915, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 18:58:08,407][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:10,394][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:12,941][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:15,141][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:17,309][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:19,566][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:25,887][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:25,887][__main__][ERROR] - id: 1922, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 18:58:28,101][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:30,157][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:32,307][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:34,458][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:36,814][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:39,271][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:41,421][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:43,674][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:45,506][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:47,213][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:49,401][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:51,363][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:53,266][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:58:55,246][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:01,393][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:01,394][__main__][ERROR] - id: 1937, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 18:59:03,747][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:05,895][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:07,746][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:09,991][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:12,034][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:13,985][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:15,713][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:17,812][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:19,821][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:21,767][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:23,387][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:25,454][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:29,141][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:31,069][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:33,554][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:35,672][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:37,648][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:39,586][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:41,627][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:43,439][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:45,408][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:47,404][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:49,372][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:51,376][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:53,348][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:55,356][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:57,233][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 18:59:59,043][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:01,295][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:03,548][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:05,383][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:07,234][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:08,931][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:16,248][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:16,249][__main__][ERROR] - id: 1971, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:00:18,600][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:20,585][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:22,839][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:25,424][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:28,416][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:34,780][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:34,781][__main__][ERROR] - id: 1977, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:00:37,140][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:38,933][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:41,166][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:43,075][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:44,919][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:46,645][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:48,749][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:50,917][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:52,905][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:54,959][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:57,002][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:00:58,698][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:00,483][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:03,086][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:05,329][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:07,521][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:09,357][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:11,543][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:13,695][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:16,048][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:17,995][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:19,911][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:25,060][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:25,060][__main__][ERROR] - id: 2000, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:01:27,722][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:30,590][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:32,840][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:34,781][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:36,814][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:38,772][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:41,035][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:42,804][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:44,823][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:47,401][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:49,023][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:50,866][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:52,712][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:54,419][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:56,424][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:01:58,564][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:00,580][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:03,451][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:12,344][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:12,345][__main__][ERROR] - id: 2019, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:02:14,315][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:16,773][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:19,132][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:21,322][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:23,635][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:25,727][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:27,907][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:30,498][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:32,295][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:34,377][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:36,452][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:38,651][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:44,830][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:44,831][__main__][ERROR] - id: 2032, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:02:46,666][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:48,772][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:50,774][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:52,921][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:58,450][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:02:58,451][__main__][ERROR] - id: 2037, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:03:00,396][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:02,164][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:03,998][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:05,926][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:08,077][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:10,636][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:12,890][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:15,094][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:17,191][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:19,340][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:21,643][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:23,581][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:25,486][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:27,445][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:29,479][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:31,322][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:35,474][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:37,759][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:39,718][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:41,971][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:44,019][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:51,699][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:54,672][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:56,566][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:03:58,663][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:01,793][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:03,782][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:05,830][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:07,673][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:09,546][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:11,259][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:16,992][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:16,993][__main__][ERROR] - id: 2069, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:04:18,921][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:26,402][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:28,285][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:30,613][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:32,887][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:34,718][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:40,834][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:40,835][__main__][ERROR] - id: 2076, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:04:42,783][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:45,010][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:47,022][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:49,100][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:51,273][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:53,430][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:55,754][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:57,505][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:04:59,484][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:03,583][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:03,583][__main__][ERROR] - id: 2086, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:05:08,783][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:08,784][__main__][ERROR] - id: 2087, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:05:10,958][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:13,210][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:15,259][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:22,493][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:24,360][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:31,270][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:31,271][__main__][ERROR] - id: 2093, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:05:33,285][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:35,400][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:37,787][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:39,768][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:42,190][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:44,029][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:46,081][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:48,130][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:49,972][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:51,974][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:54,121][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:56,440][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:05:59,408][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:05,791][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:05,792][__main__][ERROR] - id: 2107, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:06:07,642][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:09,893][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:12,044][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:20,534][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:20,535][__main__][ERROR] - id: 2111, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:06:22,666][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:24,744][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:26,584][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:28,720][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:30,783][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:32,934][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:34,777][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:40,715][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:40,715][__main__][ERROR] - id: 2119, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:06:42,764][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:44,708][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:46,749][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:48,721][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:50,648][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:52,596][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:54,438][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:56,587][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:06:59,352][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:03,068][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:05,084][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:07,024][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:08,994][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:11,013][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:13,123][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:15,273][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:18,153][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:19,877][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:23,442][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:25,409][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:27,257][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:29,512][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:31,555][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:34,013][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:36,030][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:38,010][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:40,054][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:41,848][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:44,151][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:46,151][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:48,016][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:50,168][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:52,148][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:54,145][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:55,985][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:07:57,992][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:00,789][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:02,675][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:04,760][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:06,296][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:08,420][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:10,160][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:14,263][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:16,431][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:18,454][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:20,713][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:22,674][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:24,516][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:26,959][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:29,033][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:31,094][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:32,936][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:35,580][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:37,524][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:46,202][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:48,347][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:50,403][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:53,169][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:55,216][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:57,079][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:08:59,140][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:01,053][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:03,401][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:06,481][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:08,551][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:10,533][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:12,354][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:19,880][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:19,880][__main__][ERROR] - id: 2187, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:09:21,943][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:23,681][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:26,346][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:28,395][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:30,442][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:32,561][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:34,641][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:36,791][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:38,747][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:40,786][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:43,385][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:45,393][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:47,133][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:49,072][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:52,525][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:09:54,568][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:00,422][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:00,423][__main__][ERROR] - id: 2204, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:10:02,359][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:04,354][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:06,476][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:08,676][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:10,741][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:18,217][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:18,219][__main__][ERROR] - id: 2210, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:10:21,287][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:23,131][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:25,079][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:27,033][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:29,059][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:30,828][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:32,936][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:34,752][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:36,605][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:39,802][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:41,767][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:43,828][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:45,659][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:48,744][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:51,183][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:52,990][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:54,910][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:56,912][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:10:59,073][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:01,144][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:03,230][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:06,072][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:07,982][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:10,764][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:12,733][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:15,149][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:17,198][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:19,521][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:21,640][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:23,456][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:25,493][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:27,542][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:29,513][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:31,519][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:33,457][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:36,820][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:38,716][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:40,738][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:43,417][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:45,331][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:47,460][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:49,322][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:51,130][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:53,275][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:55,700][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:57,640][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:11:59,547][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:12:07,884][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:12:07,884][__main__][ERROR] - id: 2258, exception: No JSON fragment found
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/scripts/evaluate_model.py", line 128, in main
+    prediction = find_and_parse_json_block(
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 40, in find_and_parse_json_block
+    raise e
+  File "/home/jason/dev/acs/TuringMirror/.venv/lib/python3.10/site-packages/interlab/queries/json_parsing.py", line 27, in find_and_parse_json_block
+    raise ValueError("No JSON fragment found")
+ValueError: No JSON fragment found
+[2023-08-19 19:12:10,114][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:12:11,951][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:12:13,931][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:12:15,690][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:12:17,988][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:12:20,170][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:12:30,211][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:12:32,360][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:12:35,127][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-19 19:12:37,174][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
