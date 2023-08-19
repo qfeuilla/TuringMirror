@@ -81,7 +81,8 @@ def main(cfg: DictConfig):
     if generator_order.index(cfg.generator1) > generator_order.index(cfg.generator2):
         raise ValueError("Invalid configuration.")
 
-    itself = cfg.model.name in generators
+    predictor = cfg.model.name
+    itself = predictor in generators
     human = "human" in generators
     if human and itself:
         prompt_fun = prompt_human_vs_itself
@@ -102,7 +103,7 @@ def main(cfg: DictConfig):
         ]
 
     model = get_engine(
-        model=cfg.model.name,
+        model=predictor,
         kwargs=cfg.model.kwargs or {},
     )
 
@@ -128,10 +129,23 @@ def main(cfg: DictConfig):
                 prediction = find_and_parse_json_block(
                     prediction_json
                 )["my_fable"].lower()
-                correct = (
-                        prediction == "fable1" and (cfg.model.name == row.generator1)
-                        or prediction == "fable2" and (cfg.model.name == row.generator2)
-                )
+                if prompt_fun == "prompt_human_vs_ai":
+                    correct = (
+                            prediction == "fable1" and (row.generator1 != "human")
+                            or prediction == "fable2" and (row.generator2 != "human")
+                    )
+                else:
+                    correct = (
+                            prediction == "fable1" and (predictor == row.generator1)
+                            or prediction == "fable2" and (predictor == row.generator2)
+                    )
+                if correct:
+                    correct_prediction = prediction
+                else:
+                    correct_prediction = {
+                        "fable1": "fable2",
+                        "fable2": "fable1",
+                    }.get(prediction, prediction)
             except Exception as e:
                 LOGGER.exception(f"id: {id}, exception: {e}")
                 prediction = None
@@ -145,8 +159,9 @@ def main(cfg: DictConfig):
                 "generator1": row.generator1,
                 "generator2": row.generator2,
                 "prediction": prediction,
+                "correct_prediction": correct_prediction,
                 "correct": correct,
-                "predictor": cfg.model.name,
+                "predictor": predictor,
                 "prompt_fun": prompt_fun.__name__,
             }
             output.append(d_out)
