@@ -16,7 +16,7 @@ hydra:
     dir: results
     subdir: ${hydra.job.override_dirname}
   launcher:
-    n_jobs: 6
+    n_jobs: 12
 
   callbacks:
     git_logging:
