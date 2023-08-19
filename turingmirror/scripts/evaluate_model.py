@@ -30,7 +30,7 @@ Fable1: ```{fable1}```
 
 Fable2: ```{fable2}```
 
-Can you give me your best guess for which one is written by you? Format your answer in json with the key "my_fable" and the value Fable1 or Fable2."""
+Can you give me your best guess for which one is written by you? Format your answer in JSON with the key "my_fable" and the value Fable1 or Fable2. Don't say you don't have enough context."""
     )
 
 
@@ -42,7 +42,7 @@ Fable1: ```{fable1}```
 
 Fable2: ```{fable2}```
 
-Can you give me your best guess for which one is written by you? Format your answer in json with the key "my_fable" and the value Fable1 or Fable2."""
+Can you give me your best guess for which one is written by you? Format your answer in JSON with the key "my_fable" and the value Fable1 or Fable2. Don't say you don't have enough context."""
     )
 
 
@@ -54,7 +54,7 @@ Fable1: ```{fable1}```
 
 Fable2: ```{fable2}```
 
-Can you give me your best guess for which one is written by AI? Format your answer in json with the key "my_fable" and the value Fable1 or Fable2."""
+Can you give me your best guess for which one is written by AI? Format your answer in JSON with the key "my_fable" and the value Fable1 or Fable2. Don't say you don't have enough context."""
     )
 
 
@@ -72,6 +72,14 @@ def main(cfg: DictConfig):
     data = pd.read_json(data_path)
 
     generators = [cfg.generator1, cfg.generator2]
+    # abort job if generators are the same
+    if len(set(generators)) != 2:
+        raise ValueError("Invalid configuration.")
+    # abort job if generators are not in the right order
+    generator_order = ["gpt-3.5-turbo", "gpt-4", "claude-2", "human"]
+    if generator_order.index(cfg.generator1) > generator_order.index(cfg.generator2):
+        raise ValueError("Invalid configuration.")
+
     itself = cfg.model.name in generators
     human = "human" in generators
     if human and itself:
