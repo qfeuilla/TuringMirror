@@ -1,0 +1,5 @@
+data: data/fables/model.name=human/fables.jsonl
+model:
+  name: gpt-4
+  kwargs:
+    temperature: 0.75
