@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 interlab = {git = "https://github.com/acsresearch/interlab.git"}
+hydra-core = "^1.3.2"
+omegaconf = "^2.3.0"
 
 
 [build-system]
