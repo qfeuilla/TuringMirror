@@ -1,0 +1,6 @@
+data: data/fables/model.name=human/fables.jsonl
+ids: 83
+model:
+  name: gpt-3.5-turbo
+  kwargs:
+    temperature: 0.75
