@@ -39,5 +39,4 @@ We test one-vs-one in the following configurations:
 For each of the samples we generate a binary multiple-choice prompt for both possible orders to eliminate order-bias.
 
 ## Results
-...
-
+The results are work-in-progress. A live document with the latest updates can be found at this [TuringMirror Google doc](https://docs.google.com/document/d/1pnrvOeILEJ_RJt4VvHMmi9rZK99b8w1wMwYlH3Y5EcQ/edit?pli=1). We appreciate any useful feedback in the form of comments there.
