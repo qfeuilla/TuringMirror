@@ -95,6 +95,14 @@ def main(cfg: DictConfig):
             except Exception as e:
                 LOGGER.exception(f"id: {id}, exception: {e}")
                 preference = None
+            preferred_generator = {
+                "fable1": row.generator1,
+                "fable2": row.generator2,
+            }.get(preference, None)
+            non_prefered_generator = {
+                "fable1": row.generator2,
+                "fable2": row.generator1,
+            }.get(preference, None)
             d_out = {
                 "id": id,
                 "fable_id": fable_id,
@@ -106,6 +114,8 @@ def main(cfg: DictConfig):
                 "preference": preference,
                 "predictor": predictor,
                 "prompt_fun": prompt_fun.__name__,
+                "preferred_generator": preferred_generator,
+                "non_prefered_generator": non_prefered_generator,
             }
             output.append(d_out)
             with open("results.jsonl", "a") as f:
