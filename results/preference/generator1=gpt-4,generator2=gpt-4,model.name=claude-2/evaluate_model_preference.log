@@ -1,0 +1,24 @@
+[2023-08-25 11:36:31,716][turingmirror.utils.log][INFO] - Git sha: b5b931ac4e1ec1a2dbbcca9a8550ed4d7b8b616d
+[2023-08-25 11:36:31,721][turingmirror.utils.log][INFO] - Changed files: ['scripts/conf/evaluate_model_preference.yaml']
+[2023-08-25 11:36:31,724][turingmirror.utils.log][INFO] - Git diff:
+diff --git a/scripts/conf/evaluate_model_preference.yaml b/scripts/conf/evaluate_model_preference.yaml
+index 3522bd3..7ad4fb8 100644
+--- a/scripts/conf/evaluate_model_preference.yaml
++++ b/scripts/conf/evaluate_model_preference.yaml
+@@ -16,7 +16,7 @@ hydra:
+     dir: results/preference
+     subdir: ${hydra.job.override_dirname}
+   launcher:
+-    n_jobs: 12
++    n_jobs: 6
+ 
+   callbacks:
+     git_logging:
+[2023-08-25 11:36:31,725][__main__][INFO] - /home/jason/dev/acs/TuringMirror/results/preference/generator1=gpt-4,generator2=gpt-4,model.name=claude-2
+[2023-08-25 11:36:31,736][__main__][ERROR] - Invalid configuration.
+Traceback (most recent call last):
+  File "/home/jason/dev/acs/TuringMirror/turingmirror/utils/log.py", line 23, in decorated
+    return func(*args, **kwargs)
+  File "/home/jason/dev/acs/TuringMirror/scripts/evaluate_model_preference.py", line 50, in main
+    raise ValueError("Invalid configuration.")
+ValueError: Invalid configuration.

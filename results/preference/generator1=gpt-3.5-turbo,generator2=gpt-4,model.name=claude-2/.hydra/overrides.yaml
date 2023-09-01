@@ -1,0 +1,3 @@
+- generator1=gpt-3.5-turbo
+- generator2=gpt-4
+- model.name=claude-2

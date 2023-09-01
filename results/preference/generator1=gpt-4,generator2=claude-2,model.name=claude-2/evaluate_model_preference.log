@@ -1,0 +1,59 @@
+[2023-08-25 12:42:11,317][turingmirror.utils.log][INFO] - Git sha: b5b931ac4e1ec1a2dbbcca9a8550ed4d7b8b616d
+[2023-08-25 12:42:11,321][turingmirror.utils.log][INFO] - Changed files: ['scripts/conf/evaluate_model_preference.yaml']
+[2023-08-25 12:42:11,323][turingmirror.utils.log][INFO] - Git diff:
+diff --git a/scripts/conf/evaluate_model_preference.yaml b/scripts/conf/evaluate_model_preference.yaml
+index 3522bd3..7ad4fb8 100644
+--- a/scripts/conf/evaluate_model_preference.yaml
++++ b/scripts/conf/evaluate_model_preference.yaml
+@@ -16,7 +16,7 @@ hydra:
+     dir: results/preference
+     subdir: ${hydra.job.override_dirname}
+   launcher:
+-    n_jobs: 12
++    n_jobs: 6
+ 
+   callbacks:
+     git_logging:
+[2023-08-25 12:42:11,324][__main__][INFO] - /home/jason/dev/acs/TuringMirror/results/preference/generator1=gpt-4,generator2=claude-2,model.name=claude-2
+[2023-08-25 12:42:13,692][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:15,934][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:18,188][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:20,135][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:21,977][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:23,650][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:25,303][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:27,421][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:29,113][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:30,941][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:32,749][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:34,880][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:36,692][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:38,637][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:40,762][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:42,354][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:44,115][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:46,359][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:47,926][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:49,579][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:51,116][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:52,830][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:54,745][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:56,632][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:42:58,356][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:00,083][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:01,760][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:03,614][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:05,360][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:06,809][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:08,690][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:10,515][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:12,383][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:14,118][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:15,669][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:17,493][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:19,189][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:21,060][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:23,114][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:25,034][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:27,309][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"
+[2023-08-25 12:43:29,153][httpx][INFO] - HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 200 OK"

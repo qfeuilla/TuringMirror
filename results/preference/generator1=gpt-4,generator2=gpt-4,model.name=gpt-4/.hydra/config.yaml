@@ -1,0 +1,8 @@
+data: data/fables/shuffled.json
+fable_ids: []
+model:
+  name: gpt-4
+  kwargs:
+    temperature: 0.0
+generator1: gpt-4
+generator2: gpt-4

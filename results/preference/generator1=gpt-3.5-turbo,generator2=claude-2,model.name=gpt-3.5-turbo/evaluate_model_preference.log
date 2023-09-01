@@ -1,0 +1,17 @@
+[2023-08-25 00:51:51,120][turingmirror.utils.log][INFO] - Git sha: b5b931ac4e1ec1a2dbbcca9a8550ed4d7b8b616d
+[2023-08-25 00:51:51,123][turingmirror.utils.log][INFO] - Changed files: ['scripts/conf/evaluate_model_preference.yaml']
+[2023-08-25 00:51:51,127][turingmirror.utils.log][INFO] - Git diff:
+diff --git a/scripts/conf/evaluate_model_preference.yaml b/scripts/conf/evaluate_model_preference.yaml
+index 3522bd3..7ad4fb8 100644
+--- a/scripts/conf/evaluate_model_preference.yaml
++++ b/scripts/conf/evaluate_model_preference.yaml
+@@ -16,7 +16,7 @@ hydra:
+     dir: results/preference
+     subdir: ${hydra.job.override_dirname}
+   launcher:
+-    n_jobs: 12
++    n_jobs: 6
+ 
+   callbacks:
+     git_logging:
+[2023-08-25 00:51:51,127][__main__][INFO] - /home/jason/dev/acs/TuringMirror/results/preference/generator1=gpt-3.5-turbo,generator2=claude-2,model.name=gpt-3.5-turbo
